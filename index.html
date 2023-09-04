@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/7fa906db07.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ----------header----- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo 1.png" alt="name" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>hi, I'm <span>Isha</span> <br>Sharma</br></h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------about------------------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="user 1.jpeg" alt="user">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>A Full Stack We Developer with entry-level experience specializing in web development, user interface
+                        design, HTML, CSS and Javascript. Adapt at identifying opportunities to enhance front-end design
+                        and improve the user experience.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+                    
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>10th Grade (percetage: <i>79.8%</i>)</span><br>Ambe School</li>
+                            <li><span>12th Grade (percetage: <i>69.7%</i>)</span><br>Phoenix School(PCM)</li>
+                            <li><span>BTech Computer Science(CGPA: <i>7.8%</i>)</span><br>Parul University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Video Editing</span><br>currently working on video editing projects</li>
+                            <li><span>Responsive Web development</span><br>Make we applications to be respnsive</li>
+                            <li><span>Database Management</span><br>Also have knowledge of SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Nutri_scan</span><br>A barcode scanning Web  application that provides list of
+                                nutrients and pros and cons in a food packet</li>
+                            <li><span>Portfolios</span><br>Web based Portfolios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------------services----------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive Website development</h2>
+                    <p>It consists of the tasks associated with designing, creating, building, and maintaining websites and web applications that run online on a browser.</p>
+                    <a href="nutriscan/index1.html" target="_blank">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Editing</h2>
+                    <p>Working with advanced video editing skills and knowledge of the latest video editing software, tools and techniques. you can visit my instagram profile for this.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------portfolio-------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-11.jpg" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Nutri_scan</h3>
+                        <p>A barcode scanning application that provides list of
+                            nutrients and pros and cons in a food packet</p>
+                        <a href="nutriscan/index1.html"  target="_blank">view work</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-22.jpg" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Portfolios</h3>
+                        <p>Also made some web based portfolios for organisations and individuals</p>
+                        <a href="index.html" target="_blank">view work</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-33.webp" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Websites</h3>
+                        <p>Also made some web sites for few organisations and firms</p>
+                        <a href="isha project/main.html" target="_blank">view work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!--------------------------------------contact------------------------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">   
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>ishas6182@gmail.com</p>
+                <!-- <p><i class="fa-solid fa-phone"></i>91048658807</p> -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/isha_s03/"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+                    <a href="https://twitter.com/Isha_s03"><i class="fa-brands fa-square-twitter" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/in/isha-sharma-1a357625a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name = "Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="thankyou">
+        <p>Thank you <i class="fa-regular fa-heart"></i></p>
+    </div>
+   </div>
+
+
+<!------------------ Javascript code -------------------------------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+</script>
+
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykp5kl6TL5ZVW4fQ4RmPA6PHOHQpfsuoHsIWbEn4SMGxW1Ojz7ciGPAckD6kYfDcHRSw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
