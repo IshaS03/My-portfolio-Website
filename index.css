@@ -309,7 +309,7 @@ span {
 }
 
 .contact-right {
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 
 .contact-left p {
@@ -338,18 +338,16 @@ span {
     color: #f60588;
     transform: translateY(-5px);
 }
-
-.btn {
-    border-radius: 10px;
-    background-color: #f60588;
-    color: white;
-    padding: 10px 30px;
-    text-decoration: none;
+.btn .btn2{
     display: inline-block;
+    background: #f60588;
 }
 
-.btn .btn2 {
-    display: inline block;
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .contact-right form {
@@ -369,10 +367,11 @@ form textarea {
 }
 
 .thankyou p {
+    width: 100%;
     color: aliceblue;
     text-align: center;
-    padding: 30px;
-    font-size: 25px;
+    padding: 30px 0;
+    font-size: 25px ;
     background: #262626;
 }
 
