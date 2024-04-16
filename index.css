@@ -432,12 +432,6 @@ nav .fas {
 
     }
 
-    form input,
-    form textarea {
-        width: 380px;
-
-    }
-
     .contact-left,
     .contact-right {
         flex-basis: 100%;
