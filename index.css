@@ -1,200 +1,267 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    
+
 }
-#header{
+
+#header {
     width: 100%;
     height: 100vh;
-    background-image: url("background\ 1.jpg");
+    background-image: url("isha\ bg\ \(2\).jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
 }
-.container{
+
+#header .container {
+    padding: 10px 5%;
+}
+
+.container {
     padding: 10px 10%;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    width: 200px;
+
+.logo {
+    font-size: 40px;
+    color: #000000;
 }
-nav ul li{
+
+.logo span {
+    color: #f60588;
+}
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
     position: relative;
-    transition: 0.5s;
+    transition: 1s;
 
 }
+
 nav ul li a:hover {
-    font-size: 22px;
-    font-weight: bold;
-    color: #a239ca;
+    color: #f60588;
 }
+
 .header-text {
-    margin-top: 18%;
+    padding-left: 60%;
+    margin-top: 16%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.header-text h1 span {
+    color: #f60588;
+}
+
+.header-text .tagline {
     font-size: 25px;
+    padding-top: 10px;
 }
-.header-text h1{
-    font-size: 50px;
-    margin-top: 20px;
+
+.header-text .tagline span {
+    color: #f60588;
+    font-weight: bold;
 }
-.header-text h1 span{
-    color: #a239ca;
-}
+
 /* --------------about------------ */
-#about{
+#about {
     margin-top: 30px;
     color: rgb(172, 171, 171);
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.col-1{
-    flex-basis:35%;
+
+.col-1 {
+    flex-basis: 35%;
 }
-.col-1 img{
+
+.col-1 img {
     width: 100%;
     border-radius: 15px;
 }
-.col-2{
+
+.col-2 {
     flex-basis: 60%;
 }
-.sub-title{
-    font-size:50px;
+
+.sub-title {
+    font-size: 50px;
     color: white;
+    padding: 10px 0;
 }
-.col-2 p{
-    font-size: 25px;
+
+p {
+    font-size: 24px;
 }
-.tab-titles{
+
+p a {
+    color: #f60588;
+    text-decoration: none;
+}
+
+span {
+    color: #f60588;
+}
+
+.tab-titles {
     margin: 20px 0 40px;
     display: flex;
-    
+    justify-content: space-around;
+
 }
-.tab-links{
-    margin-right: 50px ;
-    font-size: 22px;
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 25px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
     transition: 0.5s;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #a239ca;
+    background: #f60588;
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 100%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
-.tab-contents span{
-    color: #a239ca;
-    font-size: 18px;
+
+.tab-contents span {
+    color: #f60588;
+    font-size: 22px;
 }
-.tab-contents{
+
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
-} 
+}
+
 /* -------------------services---------- */
 
-#services{
+#services {
     padding: 20px 0;
 }
-.services-list{
+
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 20px;
 }
-.services-list div{
-    background-color: #262626; 
+
+.services-list div {
+    background-color: #262626;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 200;
     border-radius: 4px;
     border-right: 10px;
     padding: 40px;
     transition: background 0.5s, transform 0.5s;
 }
-.services-list div i{
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 20px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.services-list div a{
+
+.services-list div a {
     text-decoration: none;
     color: white;
     margin-top: 20px;
     font-size: 15px;
     display: inline-block;
 }
-.services-list div:hover{
-    background-color: #a239ca;
+
+.services-list div:hover {
+    background-color: #f60588;
     transform: translateY(-10px);
 }
+
 /* --------------------------------------------portfolio--------------------------------------------- */
-#portfolio{
+#portfolio {
     padding: 20px 0;
 }
-.work-list{
+
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
     border-radius: 15px;
 }
-.work{
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.work img{
+
+.work img {
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     transition: transform 0.5s;
 }
-.layer{
+
+.layer {
     width: 100%;
-    height:0%;
-    background: linear-gradient(rgba(0,0,0,0.5),#a239ca);
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #f60588);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -204,83 +271,104 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    justify-content: center; 
-    transition: height 0.5s; 
+    justify-content: center;
+    transition: height 0.5s;
     /* padding: 0 40px; */
 
 }
-.layer h3{
+
+.layer h3 {
     padding: 30px;
-   
+
 }
-.layer p{
+
+.layer p {
     padding: 10px;
-    
+
 }
-.layer a{
+
+.layer a {
     text-decoration: none;
     padding-top: 10px;
     color: aliceblue;
     font-weight: 1000;
-    
+
 }
-.work:hover img{
+
+.work:hover img {
     transform: scale(1.1);
 }
-.work:hover .layer{
+
+.work:hover .layer {
     height: 100%;
 }
 
-/*------------------------------------- contact------------------------------------------------------ */
-.contact-left{
+/*-----------------------------contact----------------------------------------------*/
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
     flex-basis: 50%;
 }
-.contact-right{
-    flex-basis: 50%;
+
+.contact-left p {
+    margin-top: 30px;
 }
-.contact-left p{
-    margin-top: 20px;
-}
-.contact-left p i{
-    margin-right: 10px;
-    color: #a239ca;
+
+.contact-left p i {
+    margin-right: 15px;
+    color: #f60588;
     font-size: 30px;
 }
-.social-icons{
+
+.social-icons {
     margin-top: 10px;
 }
-.social-icons a{
+
+.social-icons a {
     margin: 8px;
     font-size: 30px;
     color: aliceblue;
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
-    color: #a239ca;
+
+.social-icons a:hover {
+    color: #f60588;
     transform: translateY(-5px);
 }
-.btn{
+
+.btn {
     border-radius: 10px;
-    background-color: #a239ca;
+    background-color: #f60588;
     color: white;
     padding: 10px 30px;
     text-decoration: none;
     display: inline-block;
 }
-.contact-right form{
+
+.btn .btn2 {
+    display: inline block;
+}
+
+.contact-right form {
     width: 100%;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 100%;
-    padding: 10px 20px;
-    margin: 10px 0px;
+    padding: 15px;
+    margin: 15px 0px;
     background: #262626;
     color: aliceblue;
     font-size: 18px;
     border-radius: 6px;
+    outline: none;
 }
-.thankyou p{
+
+.thankyou p {
     color: aliceblue;
     text-align: center;
     padding: 30px;
@@ -289,28 +377,83 @@ form input, form textarea{
 }
 
 /*----------Css for small screen---------------------*/
-nav .fas{
+nav .fas {
     display: none;
 }
 
 
-@media only screen and (max-width: 600px){
-    #header{
+@media only screen and (max-width: 600px) {
+    #header {
         background-image: url(phone\ background.jpg);
-    } 
-    .header-text{
-        margin-top: 100%;
-        font-size: 16px;
     }
-    .header-text h1{
+
+    .logo {
+        font-size: 40px;
+        color: #ffffff;
+    }
+
+    #header .container {
+        padding: 10px 5%;
+    }
+
+    .header-text {
+        margin-bottom: 100%;
+        font-size: 16px;
+        padding-right: 0%;
+    }
+
+    .header-text h1 {
         font-size: 30px;
     }
-    nav .fas{
+
+    
+
+    .sub-title {
+        font-size: 40px;
+
+    }
+
+    .col-1,
+    .col-2 {
+        flex-basis: 100%;
+    }
+
+    .col-1 {
+        margin-bottom: 30px;
+    }
+
+    .col-2 p {
+        font-size: 14px;
+    }
+
+    .tablinks {
+        font-size: 16px;
+        margin-right: 20px;
+
+    }
+
+    form input,
+    form textarea {
+        width: 380px;
+
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    nav .fas {
         display: block;
         font-size: 25px;
     }
-    nav ul{
-        background: #a239ca;
+    
+    nav ul {
+        background: #f60588;
         color: aliceblue;
         position: fixed;
         top: 0;
@@ -322,39 +465,22 @@ nav .fas{
         transition: 0.5s;
 
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+
+    nav ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    .sub-title{
-        font-size: 40px;
 
-    }
-    .col-1, .col-2{
-        flex-basis: 100%;   
-    }
-    .col-1{
-        margin-bottom: 30px;
-    }
-    .col-2 p{
-        font-size: 14px;
-    }
-    .tablinks{
-        font-size: 16px;
-        margin-right: 20px;
-
-    }
-    .contact-left, .contact-right{
-        flex-basis: 90%;
-    }  
 }
-#msg{
+
+#msg {
     color: #12c53c;
     display: block;
 }
